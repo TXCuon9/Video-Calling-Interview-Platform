@@ -249,4 +249,4 @@ Xây dựng một nền tảng phỏng vấn lập trình trực tuyến hiện 
 
 # 👨‍💻 Tác Giả
 
-Phát triển bởi Full-Stack Developer với định hướng xây dựng hệ thống scalable và realtime hiện đại 🚀
+Phát triển bởi TXCuong với định hướng xây dựng hệ thống scalable và realtime hiện đại 🚀
