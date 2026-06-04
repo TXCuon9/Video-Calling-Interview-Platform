@@ -5,7 +5,7 @@ import { connectDB } from './lib/db.js';
 import dns from 'dns';
 import cors from 'cors';
 import {serve} from "inngest/express";
-import { inngest } from './lib/inngest.js';
+import { inngest, functions } from './lib/inngest.js';
 
 // Optional DNS override (set DNS_SERVERS=1.1.1.1,8.8.8.8)
 const dnsServers = process.env.DNS_SERVERS?.split(',').map((server) => server.trim()).filter(Boolean);
@@ -20,7 +20,7 @@ const __dirname = path.resolve();
 app.use(express.json());
 app.use(cors({origin:ENV.CLIENT_URL, credentials:true}));
 
-app.use("/api/inngest", serve({client:inngest}))
+app.use("/api/inngest", serve({ client: inngest, functions }))
 
 app.get("/health", (req, res) => {
     res.status(200).json({msg: "api is up and running"});
