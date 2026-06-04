@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "<p align=\"center\">\r   Một nền tảng phỏng vấn lập trình trực tuyến hiện đại với video call, code editor thời gian thực và hệ thống đánh giá tự động.\r </p>",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npm run start --prefix backend"
@@ -18,5 +21,7 @@
   "bugs": {
     "url": "https://github.com/TXCuon9/Video-Calling-Interview-Platform/issues"
   },
+  
+  
   "homepage": "https://github.com/TXCuon9/Video-Calling-Interview-Platform#readme"
 }
